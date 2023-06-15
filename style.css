@@ -1,0 +1,91 @@
+body{
+  background-image: url("background-1.jpg");
+  background-repeat: repeat;
+  overflow: auto;
+}
+ul li{
+  border-bottom: 1px solid black;
+}
+#topic-list p {
+    display: inline;
+    border: 2px solid rgb(182, 88, 88);
+    background-color: rgb(242, 171, 171);
+    padding: 3px;
+    border-radius: 10px;
+    margin-right: 5px;
+
+  }
+.keywords p{
+  display: inline-block;
+  overflow: auto;
+}
+
+.keywords p {
+    display: inline;
+    border: 2px solid rgb(182, 88, 88);
+    padding: 3px;
+    border-radius: 10px;
+    margin-right: 5px;
+}
+
+#topic-list li {
+    display: flex;
+    align-items: center;
+  }
+  
+  .btn-container {
+    margin-left: auto;
+  }
+  
+  .btn {
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 15px;
+  }
+  
+  .btn:hover {
+    background-color: lightblue;
+  }
+  
+  #selectedTone {
+    font-style: italic;
+    margin-left: 10px;
+}
+
+#selectTone {
+    margin-left: 10px;
+}
+
+.blog-editor {
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+.blog-editor [contenteditable="true"] {
+  min-height: 200px;
+  border: 1px solid #ccc;
+  padding: 5px;
+}
+.image-popup {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 300px;
+  background-color: #fff;
+  padding: 20px;
+  border: 1px solid #ccc;
+}
+.image-popup label {
+  display: block;
+  margin-bottom: 10px;
+}
+.image-popup input {
+  width: 100%;
+  padding: 5px;
+  margin-bottom: 10px;
+}
+.image-popup button {
+  padding: 5px 10px;
+}
+

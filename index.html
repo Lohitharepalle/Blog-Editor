@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Blog Editor</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <h2>Recommended Topics</h2>    <button class="btn" id="addTopicBtn" title="Add Topics of your choice">Add Topic</button>
+    <div id="addTopicForm" style="display: none;">
+        <h3>Add Topic</h3>
+        <label for="topicName">Topic Name:</label>
+        <input type="text" id="topicName" style="padding: 5px; width: 30em;" placeholder="Enter topic name...">
+        <br><br>
+        <label for="topicKeywords">Keywords:</label>
+        <input type="text" id="topicKeywords" style="padding: 5px; width: 30em;" placeholder="Enter keywords (comma seperated)...">
+        <br><br>
+        <button id="saveTopic" title="Save and refresh the page to see changes" style="padding: 5px;">Save</button>
+    </div>
+    <h3><i>Make use of the Write option to Share Your Thoughts</i></h3>
+
+    <ul id="topic-list">
+    </ul>
+
+    <script src="script.js"></script>
+    
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Blog Editor</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+    .clickable-btn {
+    background-color: lightpink;
+    color: rgb(0, 0, 0);
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    }
+
+    .clickable-btn:hover {
+    background-color: rgb(227, 146, 158);
+    }
+
+    .clickable-btn:active {
+    background-color: rgb(234, 105, 125);
+    }
+    </style>
+</head>
+<body>
+    <h2>Blog Editor</h2>
+    <div class="blog-editor">
+    <div>
+        <h3 id="blogTitle"></h3>
+        <div>
+            <label for="selectTone">Select Tone:</label>
+            <select id="selectTone">
+                <option value="Informative">Informative</option>
+                <option value="Formal">Formal</option>
+                <option value="Humorous">Humorous</option>
+                <option value="Inspirational">Inspirational</option>
+                <option value="Curious">Curious</option>
+            </select>
+            <span id="selectedTone"></span>
+        </div>
+        <br>
+        <div contenteditable="true" id="blog-content"></div>
+        <br>
+
+        <div>
+            <button id="addImageBtn" style="padding: 5px;">Add Image</button>
+            <button id="editImageBtn" style="padding: 5px;">Edit Image</button>
+        </div>
+        </div>
+        <br>
+        <button id="saveBlog" class="clickable-btn" title="Click to save the blog" style="margin-top: 10px; border-radius: 5px; padding: 5px; background-color: lightpink;">Save Blog</button>
+        <input type="file" id="imageInput" style="display: none;">
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="blogscript.js"></script>
+
+</body>
+</html>
